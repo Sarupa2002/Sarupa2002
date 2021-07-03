@@ -1,0 +1,51 @@
+import java.util.*;
+class Program {
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       int n;
+       n=sc.nextInt();
+       int size=n*2-1;
+       char [][]a=new char[size][size];
+       char []name={'S','A','R','U','P','A'};
+       int s=0,e=size-1,i,j;
+       int index=0;
+       while(n!=0)
+       {
+           for(i=s;i<=e;i++)
+           {
+               for(j=s;j<=e;j++)
+               {
+                   if(i==s||i==e||j==s||j==e)
+                   a[i][j]=name[index];
+               }
+           }
+           n--;
+           index++;
+           s++;
+          e--;
+       }
+           for(i=0;i<size;i++)
+           {
+               for(j=0;j<size;j++)
+               {
+                   System.out.print(a[i][j]+"");
+               }
+               System.out.println();
+           }
+       
+       
+    }
+}
+
+--------------------------------------------------------------
+SSSSSSSSSSS
+SAAAAAAAAAS
+SARRRRRRRAS
+SARUUUUURAS
+SARUPPPURAS
+SARUPAPURAS
+SARUPPPURAS
+SARUUUUURAS
+SARRRRRRRAS
+SAAAAAAAAAS
+SSSSSSSSSSS
