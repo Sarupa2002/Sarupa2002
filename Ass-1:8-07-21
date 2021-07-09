@@ -1,0 +1,29 @@
+import java.util.*;
+class Program {
+    public static void main(String[] args) {
+       String str;
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter string:");
+       str=sc.next();
+       int u=0,i=0,d=0,s=0;
+       char ch[]=str.toCharArray();
+       for(i=0;i<ch.length;i++)
+       {
+           if(Character.isUpperCase(ch[i]))
+           u=u++;
+           else if(Character.isLowerCase(ch[i]))
+           i=i++;
+           else if(Character.isDigit(ch[i]))
+           d=d++;
+           else
+           s=s++;
+       }
+       if(u==i&&u==d&&u==s)
+         System.out.print("Yes");
+       else
+       System.out.print("No");
+    }
+}
+------------------------------------------------------------
+Enter string:sdafg$%GHY78
+No
