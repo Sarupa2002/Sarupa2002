@@ -1,0 +1,26 @@
+import java.util.*;
+class Program{
+    public static void main(String[] args) {
+       String st;
+       int i;
+       Scanner sc=new Scanner(System.in);
+       st=sc.next();
+       char ch[]=st.toCharArray();
+       String x=String.valueOf(ch);
+       int n=st.length();
+       
+       for(i=0;i<n;i++)
+       {
+          if(st.charAt(i)%2!=0)
+           System.out.print(st.charAt(i));
+       }
+       for(i=0;i<n;i++)
+       {
+           if(st.charAt(i)%2==0)
+           System.out.print(st.charAt(i));
+       }
+    }
+}
+------------------------------------------------------
+786234
+738624
